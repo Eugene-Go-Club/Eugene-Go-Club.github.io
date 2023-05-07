@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://github.eugenego.club/sitemap.xml
