@@ -4,7 +4,7 @@
 
 ### full project files -> https://github.com/hnakae/blog
 
-#### clone blog
+#### fork and clone blog
 
 #### remove public
 
