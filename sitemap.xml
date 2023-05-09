@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://github.eugenego.club/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2023-05-08T20:12:48-07:00</lastmod>
   </url><url>
-    <loc>http://github.eugenego.club/</loc>
+    <loc>/</loc>
     <lastmod>2023-05-08T20:12:48-07:00</lastmod>
   </url><url>
-    <loc>http://github.eugenego.club/posts/first/</loc>
+    <loc>/posts/first/</loc>
     <lastmod>2023-05-08T20:12:48-07:00</lastmod>
   </url><url>
-    <loc>http://github.eugenego.club/tags/invasion/</loc>
+    <loc>/tags/invasion/</loc>
     <lastmod>2023-05-08T20:12:48-07:00</lastmod>
   </url><url>
-    <loc>http://github.eugenego.club/tags/middlegame/</loc>
+    <loc>/tags/middlegame/</loc>
     <lastmod>2023-05-08T20:12:48-07:00</lastmod>
   </url><url>
-    <loc>http://github.eugenego.club/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2023-05-08T20:12:48-07:00</lastmod>
   </url><url>
-    <loc>http://github.eugenego.club/posts/second/</loc>
+    <loc>/posts/second/</loc>
     <lastmod>2023-05-08T20:12:48-07:00</lastmod>
   </url><url>
-    <loc>http://github.eugenego.club/categories/shinogi/</loc>
+    <loc>/categories/shinogi/</loc>
     <lastmod>2023-05-08T20:12:48-07:00</lastmod>
   </url><url>
-    <loc>http://github.eugenego.club/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-05-08T20:12:48-07:00</lastmod>
   </url><url>
-    <loc>http://github.eugenego.club/faq/</loc>
+    <loc>/faq/</loc>
   </url><url>
-    <loc>http://github.eugenego.club/games/</loc>
+    <loc>/games/</loc>
   </url><url>
-    <loc>http://github.eugenego.club/joseki/</loc>
+    <loc>/joseki/</loc>
   </url><url>
-    <loc>http://github.eugenego.club/patterns/</loc>
+    <loc>/patterns/</loc>
   </url><url>
-    <loc>http://github.eugenego.club/proverbs/</loc>
+    <loc>/proverbs/</loc>
   </url>
 </urlset>
