@@ -1,10 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Example Lekh Site</title>
-    <link>https://example.com/</link>
-    <description>Recent content on Example Lekh Site</description>
+    <title>Eugene Go Club</title>
+    <link>/</link>
+    <description>Recent content on Eugene Go Club</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 May 2023 20:12:48 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>/posts/first/</link>
+      <pubDate>Mon, 08 May 2023 20:12:48 -0700</pubDate>
+      
+      <guid>/posts/first/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Second</title>
+      <link>/posts/second/</link>
+      <pubDate>Mon, 08 May 2023 20:12:48 -0700</pubDate>
+      
+      <guid>/posts/second/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/faq/</guid>
+      <description>faq</description>
+    </item>
+    
+    <item>
+      <title>Games</title>
+      <link>/games/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/games/</guid>
+      <description>games</description>
+    </item>
+    
+    <item>
+      <title>Joseki</title>
+      <link>/joseki/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/joseki/</guid>
+      <description>joseki</description>
+    </item>
+    
+    <item>
+      <title>Patterns</title>
+      <link>/patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/patterns/</guid>
+      <description>patterns</description>
+    </item>
+    
+    <item>
+      <title>Proverbs</title>
+      <link>/proverbs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/proverbs/</guid>
+      <description>proverbs</description>
+    </item>
+    
   </channel>
 </rss>
