@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Eugene Go Club</title>
-    <link>https://Eugene-Go-Club.github.io/tags/</link>
+    <link>https://github.eugenego.club/tags/</link>
     <description>Recent content in Tags on Eugene Go Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 May 2023 20:12:48 -0700</lastBuildDate><atom:link href="https://Eugene-Go-Club.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 May 2023 20:12:48 -0700</lastBuildDate><atom:link href="https://github.eugenego.club/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>invasion</title>
-      <link>https://Eugene-Go-Club.github.io/tags/invasion/</link>
+      <link>https://github.eugenego.club/tags/invasion/</link>
       <pubDate>Mon, 08 May 2023 20:12:48 -0700</pubDate>
       
-      <guid>https://Eugene-Go-Club.github.io/tags/invasion/</guid>
+      <guid>https://github.eugenego.club/tags/invasion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>middlegame</title>
-      <link>https://Eugene-Go-Club.github.io/tags/middlegame/</link>
+      <link>https://github.eugenego.club/tags/middlegame/</link>
       <pubDate>Mon, 08 May 2023 20:12:48 -0700</pubDate>
       
-      <guid>https://Eugene-Go-Club.github.io/tags/middlegame/</guid>
+      <guid>https://github.eugenego.club/tags/middlegame/</guid>
       <description></description>
     </item>
     
