@@ -8,30 +8,30 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 25 May 2023 15:00:03 -0700</lastBuildDate><atom:link href="https://github.eugenego.club/tags/corvallis/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bob [1k] vs Hiro [1d]</title>
-      <link>https://github.eugenego.club/posts/game2/</link>
-      <pubDate>Thu, 25 May 2023 15:00:03 -0700</pubDate>
-      
-      <guid>https://github.eugenego.club/posts/game2/</guid>
-      <description>https://online-go.com/review/1078355</description>
-    </item>
-    
-    <item>
-      <title>Bryant [2k] vs Hiro [1d]</title>
-      <link>https://github.eugenego.club/posts/game3/</link>
-      <pubDate>Thu, 25 May 2023 15:00:03 -0700</pubDate>
-      
-      <guid>https://github.eugenego.club/posts/game3/</guid>
-      <description>https://online-go.com/review/1078778</description>
-    </item>
-    
-    <item>
-      <title>Galen [2k] vs Hiro [1d]</title>
+      <title>tournament game 1</title>
       <link>https://github.eugenego.club/posts/game1/</link>
       <pubDate>Thu, 25 May 2023 15:00:03 -0700</pubDate>
       
       <guid>https://github.eugenego.club/posts/game1/</guid>
-      <description>https://online-go.com/review/1078351</description>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>tournament game 2</title>
+      <link>https://github.eugenego.club/posts/game2/</link>
+      <pubDate>Thu, 25 May 2023 15:00:03 -0700</pubDate>
+      
+      <guid>https://github.eugenego.club/posts/game2/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>tournament game 3</title>
+      <link>https://github.eugenego.club/posts/game3/</link>
+      <pubDate>Thu, 25 May 2023 15:00:03 -0700</pubDate>
+      
+      <guid>https://github.eugenego.club/posts/game3/</guid>
+      <description> </description>
     </item>
     
   </channel>
