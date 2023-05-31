@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+<link rel="stylesheet" href="https://github.eugenego.club/build.css"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Svg Sgf Viewer | Eugene Go Club</title>
+<meta name="keywords" content="">
+<meta name="description" content="repo: https://github.com/hnakae/go-blog-flask-api # Path to your SGF file sgf_file_path = &#34;./sgf/example-game.sgf&#34; # Parse SGF File with open(sgf_file_path, &#39;r&#39;, encoding=&#39;utf-8&#39;) as file: sgf_content = file.read() # Extract the moves using regular expressions move_regex = re.compile(r&#34;;[BW]\[[a-z]{0,2}\]&#34;) moves = move_regex.findall(sgf_content) # Clean up the moves and remove unnecessary characters clean_moves = [move.strip(&#34;;&#34;).replace(&#34;B[&#34;, &#34;&#34;).replace(&#34;W[&#34;, &#34;&#34;).replace(&#34;]&#34;,&#34;&#34;) for move in moves] # Print the extracted moves for move in clean_moves: print(move) output: dd pd dp pp fc pj jj">
+<meta name="author" content="">
+<link rel="canonical" href="https://github.eugenego.club/posts/svg-sgf-viewer/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://github.eugenego.club/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.eugenego.club/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://github.eugenego.club/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://github.eugenego.club/apple-touch-icon.png">
+<link rel="mask-icon" href="https://github.eugenego.club/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Svg Sgf Viewer" />
+<meta property="og:description" content="repo: https://github.com/hnakae/go-blog-flask-api # Path to your SGF file sgf_file_path = &#34;./sgf/example-game.sgf&#34; # Parse SGF File with open(sgf_file_path, &#39;r&#39;, encoding=&#39;utf-8&#39;) as file: sgf_content = file.read() # Extract the moves using regular expressions move_regex = re.compile(r&#34;;[BW]\[[a-z]{0,2}\]&#34;) moves = move_regex.findall(sgf_content) # Clean up the moves and remove unnecessary characters clean_moves = [move.strip(&#34;;&#34;).replace(&#34;B[&#34;, &#34;&#34;).replace(&#34;W[&#34;, &#34;&#34;).replace(&#34;]&#34;,&#34;&#34;) for move in moves] # Print the extracted moves for move in clean_moves: print(move) output: dd pd dp pp fc pj jj" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://github.eugenego.club/posts/svg-sgf-viewer/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-30T23:26:11-07:00" />
+<meta property="article:modified_time" content="2023-05-30T23:26:11-07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Svg Sgf Viewer"/>
+<meta name="twitter:description" content="repo: https://github.com/hnakae/go-blog-flask-api # Path to your SGF file sgf_file_path = &#34;./sgf/example-game.sgf&#34; # Parse SGF File with open(sgf_file_path, &#39;r&#39;, encoding=&#39;utf-8&#39;) as file: sgf_content = file.read() # Extract the moves using regular expressions move_regex = re.compile(r&#34;;[BW]\[[a-z]{0,2}\]&#34;) moves = move_regex.findall(sgf_content) # Clean up the moves and remove unnecessary characters clean_moves = [move.strip(&#34;;&#34;).replace(&#34;B[&#34;, &#34;&#34;).replace(&#34;W[&#34;, &#34;&#34;).replace(&#34;]&#34;,&#34;&#34;) for move in moves] # Print the extracted moves for move in clean_moves: print(move) output: dd pd dp pp fc pj jj"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://github.eugenego.club/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Svg Sgf Viewer",
+      "item": "https://github.eugenego.club/posts/svg-sgf-viewer/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Svg Sgf Viewer",
+  "name": "Svg Sgf Viewer",
+  "description": "repo: https://github.com/hnakae/go-blog-flask-api # Path to your SGF file sgf_file_path = \u0026#34;./sgf/example-game.sgf\u0026#34; # Parse SGF File with open(sgf_file_path, \u0026#39;r\u0026#39;, encoding=\u0026#39;utf-8\u0026#39;) as file: sgf_content = file.read() # Extract the moves using regular expressions move_regex = re.compile(r\u0026#34;;[BW]\\[[a-z]{0,2}\\]\u0026#34;) moves = move_regex.findall(sgf_content) # Clean up the moves and remove unnecessary characters clean_moves = [move.strip(\u0026#34;;\u0026#34;).replace(\u0026#34;B[\u0026#34;, \u0026#34;\u0026#34;).replace(\u0026#34;W[\u0026#34;, \u0026#34;\u0026#34;).replace(\u0026#34;]\u0026#34;,\u0026#34;\u0026#34;) for move in moves] # Print the extracted moves for move in clean_moves: print(move) output: dd pd dp pp fc pj jj",
+  "keywords": [
+    
+  ],
+  "articleBody": "repo: https://github.com/hnakae/go-blog-flask-api # Path to your SGF file sgf_file_path = \"./sgf/example-game.sgf\" # Parse SGF File with open(sgf_file_path, 'r', encoding='utf-8') as file: sgf_content = file.read() # Extract the moves using regular expressions move_regex = re.compile(r\";[BW]\\[[a-z]{0,2}\\]\") moves = move_regex.findall(sgf_content) # Clean up the moves and remove unnecessary characters clean_moves = [move.strip(\";\").replace(\"B[\", \"\").replace(\"W[\", \"\").replace(\"]\",\"\") for move in moves] # Print the extracted moves for move in clean_moves: print(move) output: dd pd dp pp fc pj jj\nconvert into svg coordinates def translate_letter_to_cx_number(letter): alphabet = 'abcdefghijklmnopqrstuvwxyz' number = alphabet.index(letter) * 5 + 3 return number # Test the translation letters = ['a', 'b', 'c', 't'] numbers = [translate_letter_to_number(letter) for letter in letters] print(numbers) # Output: [3, 8, 13, 93] \u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e ",
+  "wordCount" : "436",
+  "inLanguage": "en",
+  "datePublished": "2023-05-30T23:26:11-07:00",
+  "dateModified": "2023-05-30T23:26:11-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.eugenego.club/posts/svg-sgf-viewer/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Eugene Go Club",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://github.eugenego.club/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://github.eugenego.club/" accesskey="h" title="Eugene Go Club (Alt + H)">Eugene Go Club</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://github.eugenego.club/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.eugenego.club/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.eugenego.club/meetup/" title="Meetup.com">
+                    <span>Meetup.com</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main flex flex-col">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://github.eugenego.club/">Home</a>&nbsp;»&nbsp;<a href="https://github.eugenego.club/posts/">Posts</a></div>
+    <h1 class="post-title">
+      Svg Sgf Viewer
+    </h1>
+    <div class="post-meta"><span title='2023-05-30 23:26:11 -0700 PDT'>May 30, 2023</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="repo-httpsgithubcomhnakaego-blog-flask-api">repo: <a href="https://github.com/hnakae/go-blog-flask-api">https://github.com/hnakae/go-blog-flask-api</a><a hidden class="anchor" aria-hidden="true" href="#repo-httpsgithubcomhnakaego-blog-flask-api">#</a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Path to your SGF file</span>
+</span></span><span style="display:flex;"><span>sgf_file_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;./sgf/example-game.sgf&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Parse SGF File</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(sgf_file_path, <span style="color:#e6db74">&#39;r&#39;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;utf-8&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>    sgf_content <span style="color:#f92672">=</span> file<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extract the moves using regular expressions</span>
+</span></span><span style="display:flex;"><span>move_regex <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>compile(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;;[BW]\[[a-z]{0,2}\]&#34;</span>)
+</span></span><span style="display:flex;"><span>moves <span style="color:#f92672">=</span> move_regex<span style="color:#f92672">.</span>findall(sgf_content)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Clean up the moves and remove unnecessary characters</span>
+</span></span><span style="display:flex;"><span>clean_moves <span style="color:#f92672">=</span> [move<span style="color:#f92672">.</span>strip(<span style="color:#e6db74">&#34;;&#34;</span>)<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;B[&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;W[&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;]&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#66d9ef">for</span> move <span style="color:#f92672">in</span> moves]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Print the extracted moves</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> move <span style="color:#f92672">in</span> clean_moves:
+</span></span><span style="display:flex;"><span>    print(move)
+</span></span></code></pre></div><h1 id="output">output:<a hidden class="anchor" aria-hidden="true" href="#output">#</a></h1>
+<p>dd
+pd
+dp
+pp
+fc
+pj
+jj</p>
+<h1 id="convert-into-svg-coordinates">convert into svg coordinates<a hidden class="anchor" aria-hidden="true" href="#convert-into-svg-coordinates">#</a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">translate_letter_to_cx_number</span>(letter):
+</span></span><span style="display:flex;"><span>    alphabet <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span>
+</span></span><span style="display:flex;"><span>    number <span style="color:#f92672">=</span> alphabet<span style="color:#f92672">.</span>index(letter) <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> number
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Test the translation</span>
+</span></span><span style="display:flex;"><span>letters <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#e6db74">&#39;t&#39;</span>]
+</span></span><span style="display:flex;"><span>numbers <span style="color:#f92672">=</span> [translate_letter_to_number(letter) <span style="color:#66d9ef">for</span> letter <span style="color:#f92672">in</span> letters]
+</span></span><span style="display:flex;"><span>print(numbers)  <span style="color:#75715e"># Output: [3, 8, 13, 93]</span>
+</span></span></code></pre></div><h1 id="heading"><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-svg" data-lang="svg"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;svg</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">viewBox=</span><span style="color:#e6db74">&#34;0 0 96 96&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;rect</span> <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;96&#34;</span> <span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;96&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#DCB35C&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;rect</span> <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;90&#34;</span> <span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;90&#34;</span> <span style="color:#a6e22e">x=</span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#a6e22e">y=</span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">stroke-width=</span><span style="color:#e6db74">&#34;.2&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">stroke-width=</span><span style="color:#e6db74">&#34;.2&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#a6e22e">d=</span><span style="color:#e6db74">&#34;m3,8h90m0,5h-90m0,5h90m0,5h-90m0,5h90m0,5h-90m0,5h90m0,5h-90m0,5h90m0,5h-90m0,5h90m0,5h-90m0,5h90m0,5h-90m0,5h90m0,5h-90m0,5h90&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">stroke-width=</span><span style="color:#e6db74">&#34;.2&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#a6e22e">d=</span><span style="color:#e6db74">&#34;m8,3v90m5,0v-90m5,0v90m5,0v-90m5,0v90m5,0v-90m5,0v90m5,0v-90m5,0v90m5,0v-90m5,0v90m5,0v-90m5,0v90m5,0v-90m5,0v90m5,0v-90m5,0v90&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">stroke=</span><span style="color:#e6db74">&#34;#000&#34;</span> <span style="color:#a6e22e">stroke-width=</span><span style="color:#e6db74">&#34;.8&#34;</span> <span style="color:#a6e22e">stroke-linecap=</span><span style="color:#e6db74">&#34;round&#34;</span> <span style="color:#a6e22e">d=</span><span style="color:#e6db74">&#34;m18,78l0,0m30,0l0,0m30,0l0,0m0-30l0,0m-30,0l0,0m-30,0l0,0m0-30l0,0m30,0l0,0m30,0l0,0&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- use svg coordinates to place black.png and white.png --&gt;</span>
+</span></span><span style="display:flex;"><span>  {{ range .Moves }}
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;image</span> <span style="color:#a6e22e">x=</span><span style="color:#e6db74">&#34;{{ .X }}&#34;</span> <span style="color:#a6e22e">y=</span><span style="color:#e6db74">&#34;{{ .Y }}&#34;</span> <span style="color:#a6e22e">xlink:href=</span><span style="color:#e6db74">&#34;{{ .ImageURL }}&#34;</span> <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;{{ .Width }}&#34;</span> <span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;{{ .Height }}&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  {{ end }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- Place markers at the intersections --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;13&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;13&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;13&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;13&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;18&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;18&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;23&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;23&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;28&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;28&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;33&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;33&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;38&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;38&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;43&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;43&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;48&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;48&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;53&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;53&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;58&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;58&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;63&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;63&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;68&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;68&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;73&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;73&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;78&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;78&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;83&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;83&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;88&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;88&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;circle</span> <span style="color:#a6e22e">cx=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">cy=</span><span style="color:#e6db74">&#34;93&#34;</span> <span style="color:#a6e22e">r=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">&lt;!-- Arrow Buttons --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;polygon</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;forward-button&#34;</span> <span style="color:#a6e22e">points=</span><span style="color:#e6db74">&#34;86,45 71,30 71,60&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;polygon</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;backward-button&#34;</span> <span style="color:#a6e22e">points=</span><span style="color:#e6db74">&#34;10,45 25,30 25,60&#34;</span> <span style="color:#a6e22e">fill=</span><span style="color:#e6db74">&#34;#000&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/svg&gt;</span>
+</span></span></code></pre></div><h1 id="add-some-script-somewhere-for-clicking-through-moves-draft">add some script somewhere for clicking through moves (draft)<a hidden class="anchor" aria-hidden="true" href="#add-some-script-somewhere-for-clicking-through-moves-draft">#</a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// JavaScript code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;DOMContentLoaded&#34;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">moves</span> <span style="color:#f92672">=</span> {{ .<span style="color:#a6e22e">Moves</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">jsonify</span> }};
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">currentIndex</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">forwardButton</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;forward-button&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">backwardButton</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;backward-button&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">forwardButton</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">currentIndex</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">moves</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">currentIndex</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">displayMoves</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">backwardButton</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">currentIndex</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">moves</span>.<span style="color:#a6e22e">pop</span>();
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">currentIndex</span><span style="color:#f92672">--</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">displayMoves</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">displayMoves</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Clear the SVG board
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">svgBoard</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;svg&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">svgBoard</span>.<span style="color:#a6e22e">firstChild</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">svgBoard</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">remove</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Re-render the moves up to the current index
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">currentIndex</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">move</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">moves</span>[<span style="color:#a6e22e">i</span>];
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">image</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElementNS</span>(<span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>, <span style="color:#e6db74">&#34;image&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;x&#34;</span>, <span style="color:#a6e22e">move</span>.<span style="color:#a6e22e">X</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;y&#34;</span>, <span style="color:#a6e22e">move</span>.<span style="color:#a6e22e">Y</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;xlink:href&#34;</span>, <span style="color:#a6e22e">move</span>.<span style="color:#a6e22e">ImageURL</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;width&#34;</span>, <span style="color:#a6e22e">move</span>.<span style="color:#a6e22e">Width</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#a6e22e">move</span>.<span style="color:#a6e22e">Height</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">svgBoard</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">image</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h1 id="how-to-do-capture-rules">how to do capture rules?<a hidden class="anchor" aria-hidden="true" href="#how-to-do-capture-rules">#</a></h1>
+
+
+    
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://github.eugenego.club/posts/svg/">
+    <span class="title">Next »</span>
+    <br>
+    <span>svg test</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://github.eugenego.club/">Eugene Go Club</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

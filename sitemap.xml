@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://github.eugenego.club/</loc>
+    <lastmod>2023-05-30T23:26:11-07:00</lastmod>
+  </url><url>
+    <loc>https://github.eugenego.club/posts/</loc>
+    <lastmod>2023-05-30T23:26:11-07:00</lastmod>
+  </url><url>
+    <loc>https://github.eugenego.club/posts/svg-sgf-viewer/</loc>
+    <lastmod>2023-05-30T23:26:11-07:00</lastmod>
+  </url><url>
     <loc>https://github.eugenego.club/tags/bob/</loc>
     <lastmod>2023-05-25T15:00:03-07:00</lastmod>
   </url><url>
@@ -11,16 +20,16 @@
     <loc>https://github.eugenego.club/tags/corvallis/</loc>
     <lastmod>2023-05-25T15:00:03-07:00</lastmod>
   </url><url>
-    <loc>https://github.eugenego.club/</loc>
-    <lastmod>2023-05-25T15:00:03-07:00</lastmod>
-  </url><url>
     <loc>https://github.eugenego.club/tags/galen/</loc>
     <lastmod>2023-05-25T15:00:03-07:00</lastmod>
   </url><url>
     <loc>https://github.eugenego.club/tags/hiro/</loc>
     <lastmod>2023-05-25T15:00:03-07:00</lastmod>
   </url><url>
-    <loc>https://github.eugenego.club/posts/</loc>
+    <loc>https://github.eugenego.club/tags/svg/</loc>
+    <lastmod>2023-05-25T15:00:03-07:00</lastmod>
+  </url><url>
+    <loc>https://github.eugenego.club/posts/svg/</loc>
     <lastmod>2023-05-25T15:00:03-07:00</lastmod>
   </url><url>
     <loc>https://github.eugenego.club/tags/</loc>

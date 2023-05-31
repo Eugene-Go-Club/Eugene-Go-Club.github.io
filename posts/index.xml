@@ -6,7 +6,25 @@
     <description>Recent content in Posts on Eugene Go Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 May 2023 15:00:03 -0700</lastBuildDate><atom:link href="https://github.eugenego.club/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 May 2023 23:26:11 -0700</lastBuildDate><atom:link href="https://github.eugenego.club/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Svg Sgf Viewer</title>
+      <link>https://github.eugenego.club/posts/svg-sgf-viewer/</link>
+      <pubDate>Tue, 30 May 2023 23:26:11 -0700</pubDate>
+      
+      <guid>https://github.eugenego.club/posts/svg-sgf-viewer/</guid>
+      <description>repo: https://github.com/hnakae/go-blog-flask-api # Path to your SGF file sgf_file_path = &amp;#34;./sgf/example-game.sgf&amp;#34; # Parse SGF File with open(sgf_file_path, &amp;#39;r&amp;#39;, encoding=&amp;#39;utf-8&amp;#39;) as file: sgf_content = file.read() # Extract the moves using regular expressions move_regex = re.compile(r&amp;#34;;[BW]\[[a-z]{0,2}\]&amp;#34;) moves = move_regex.findall(sgf_content) # Clean up the moves and remove unnecessary characters clean_moves = [move.strip(&amp;#34;;&amp;#34;).replace(&amp;#34;B[&amp;#34;, &amp;#34;&amp;#34;).replace(&amp;#34;W[&amp;#34;, &amp;#34;&amp;#34;).replace(&amp;#34;]&amp;#34;,&amp;#34;&amp;#34;) for move in moves] # Print the extracted moves for move in clean_moves: print(move) output: dd pd dp pp fc pj jj</description>
+    </item>
+    
+    <item>
+      <title>svg test</title>
+      <link>https://github.eugenego.club/posts/svg/</link>
+      <pubDate>Thu, 25 May 2023 15:00:03 -0700</pubDate>
+      
+      <guid>https://github.eugenego.club/posts/svg/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>tournament game 1</title>
       <link>https://github.eugenego.club/posts/game1/</link>
